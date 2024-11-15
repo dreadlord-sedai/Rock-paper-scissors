@@ -31,15 +31,10 @@ function getHumanChoice() {
 }
 
 
-// Players scores
-let humanScore = 0;
-let computerScore = 0;
-
 // Function to play a round
 function playRound(humanChoice, computerChoice) {
 
-    console.log(humanChoice);
-    console.log(computerChoice);
+
 
     // Logic to determine winner
     if (humanChoice === computerChoice) {
@@ -66,11 +61,25 @@ function playRound(humanChoice, computerChoice) {
 
 }
 
-const computerChoice = getComputerChoice();
-const humanChoice = getHumanChoice();
+
 
 
 // play 5 rounds
 function playGame() {
-    
+
+    // Players scores
+    let humanScore = 0;
+    let computerScore = 0;
+
+    for (let i = 0; i < 5; i++) {
+
+        // Get computer and human choices
+        const computerChoice = getComputerChoice();
+        const humanChoice = getHumanChoice();
+
+        // Play a round
+        const result = playRound(humanChoice, computerChoice);
+        console.log(result);
+
+    }
 }
