@@ -82,4 +82,13 @@ function playGame() {
         console.log(result);
 
     }
+
+    // Determine winner
+    if (humanScore > computerScore) {
+        return "You win! You beat the computer " + humanScore + " to " + computerScore + ".";
+    } else if (humanScore < computerScore) {
+        return "You lose! The computer beat you " + computerScore + " to " + humanScore + ".";
+    } else {
+        return "It's a tie! You and the computer tied " + humanScore + " to " + computerScore + ".";
+    }
 }
