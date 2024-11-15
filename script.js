@@ -16,6 +16,7 @@ function getComputerChoice() {
 function getHumanChoice() {
 
     let choice = prompt("Rock, Paper, or Scissors?");
+    choice = choice.trim();
     choice = choice.toLowerCase();
 
     // Check if choice is valid
@@ -30,6 +31,9 @@ function getHumanChoice() {
 
 }
 
+// Players scores
+let humanScore = 0;
+let computerScore = 0;
 
 // Function to play a round
 function playRound(humanChoice, computerChoice) {
@@ -64,12 +68,13 @@ function playRound(humanChoice, computerChoice) {
 
 
 
-// play 5 rounds
+// Play 5 rounds
 function playGame() {
 
-    // Players scores
-    let humanScore = 0;
-    let computerScore = 0;
+    // Reset scores
+    humanScore = 0;
+    computerScore = 0;
+
 
     for (let i = 0; i < 5; i++) {
 
@@ -85,10 +90,13 @@ function playGame() {
 
     // Determine winner
     if (humanScore > computerScore) {
-        return "You win! You beat the computer " + humanScore + " to " + computerScore + ".";
+        console.log("You win! You beat the computer " + humanScore + " to " + computerScore + "."); 
     } else if (humanScore < computerScore) {
-        return "You lose! The computer beat you " + computerScore + " to " + humanScore + ".";
+        console.log("You lose! The computer beat you " + computerScore + " to " + humanScore + ".");
     } else {
-        return "It's a tie! You and the computer tied " + humanScore + " to " + computerScore + ".";
+        console.log("It's a tie! You both scored " + humanScore + " points.");
     }
 }
+
+
+playGame();
