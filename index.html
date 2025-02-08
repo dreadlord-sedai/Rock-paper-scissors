@@ -4,11 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Dark Theme -->
+    <link href="https://bootswatch.com/4/darkly/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-dark text-white">
 
+    <div class="container text-center mt-5">
+        <h1 class="title">Rock Paper Scissors</h1>
+        <p class="lead">Choose Rock, Paper or Scissors</p>
+    </div>
 
+    <div class="container text-center mt-4">
+        <div class="row">
+            <div class="col">
+                <h2>Human Score</h2>
+                <p id="humanScore" class="score">0</p>
+            </div>
+            <div class="col">
+                <h2>Computer Score</h2>
+                <p id="computerScore" class="score">0</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="container text-center mt-4">
+        <button id="rock" class="btn btn-primary m-2">Rock</button>
+        <button id="paper" class="btn btn-primary m-2">Paper</button>
+        <button id="scissors" class="btn btn-primary m-2">Scissors</button>
+    </div>
+
+    <div class="container text-center mt-4">
+        <h2>Result</h2>
+        <p id="result" class="result">Choose an option</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
