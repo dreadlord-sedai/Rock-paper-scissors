@@ -1,0 +1,17 @@
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.score {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.result {
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    font-style: italic;
+}
